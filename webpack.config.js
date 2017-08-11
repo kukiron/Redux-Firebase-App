@@ -1,6 +1,6 @@
 module.exports = {
   devtool: 'inline-source-map',
-  entry: __dirname + '/app/index.js',
+  entry: path.join(__dirname, 'app/index.js'),
   output: {
     path: __dirname,
     publicPath: '/',

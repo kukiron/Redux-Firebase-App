@@ -12,7 +12,7 @@ export function inviteReducer(state = {}, action) {
     case ActionTypes.GetInviteRejected: {
       return Object.assign({}, state, {
         inProgress: false,
-        error: 'Error in getting invite.',
+        error: 'Error in getting invite.'
       });
     }
     case ActionTypes.GetInviteFulfilled: {
@@ -39,7 +39,7 @@ export function inviteReducer(state = {}, action) {
     case ActionTypes.AddToInviteRejected: {
       return Object.assign({}, state, {
         inProgress: false,
-        error: 'Error in adding guest.',
+        error: 'Error in adding guest.'
       });
     }
     case ActionTypes.AddToInviteFulfilled: {
