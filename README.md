@@ -1,4 +1,6 @@
 # Redux-Firebase-App
+[![Build Status](https://travis-ci.org/kukiron/Redux-Firebase-App.svg?branch=master)](https://travis-ci.org/kukiron/Redux-Firebase-App) [![Code Climate](https://codeclimate.com/github/kukiron/Redux-Firebase-App/badges/gpa.svg)](https://codeclimate.com/github/kukiron/Redux-Firebase-App)
+
 Using Firebase with React & Redux in a starter app.
 
 ## Geting Started
