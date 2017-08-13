@@ -6,7 +6,7 @@
   "scripts": {
     "clear": "rm -r -f ./build",
     "build": "npm run clear && webpack --watch",
-    "start": "webpack-dev-server --inline",
+    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --inline\"",
     "test": "echo \"Error: Run 'make test' instead.\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,7 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
     "firebase": "^3.5.0",
+    "material-ui": "^0.18.7",
     "react": "^15.4.0-rc.4",
     "react-dom": "^15.4.0-rc.4",
     "react-redux": "^4.4.5",
@@ -33,6 +34,7 @@
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.25.0",
     "node-sass": "^3.10.1",
+    "nodemon": "^1.11.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
