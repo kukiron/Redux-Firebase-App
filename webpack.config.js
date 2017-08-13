@@ -1,3 +1,6 @@
+const path = require('path');
+const webpack = require('webpack');
+
 module.exports = {
   devtool: 'inline-source-map',
   entry: path.join(__dirname, 'app/index.js'),
@@ -18,5 +21,12 @@ module.exports = {
         loaders: ['style', 'css', 'sass']
       }
     ]
-  }
+  },
+  devServer: {
+    hot: true,
+    stats: 'errors-only'
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
 }
