@@ -1,4 +1,11 @@
 import React from 'react';
+import RaisedButton from 'material-ui/RaisedButton';
+import TextField from 'material-ui/TextField';
+import Paper from 'material-ui/Paper';
+
+const styles = {
+  marginTop: 15
+}
 
 export default class Invite extends React.Component {
 
@@ -28,10 +35,10 @@ export default class Invite extends React.Component {
     const { host, agenda, guest_count, guests } = this.props.invite;
     return (
       <div className="container">
-        <div className="well">
-          <h1>Meeting invite</h1>
-        </div>
-        <div className="bg-warning meeting-summary">
+        <Paper zDepth={3} className="well">
+          <h1>Meeting invitation</h1>
+        </Paper>
+        <Paper zDepth={2} className="meeting-summary">
           <div className="row">
             <div className="col-sm-4 col-md-2">
               <b>Host:</b>
@@ -48,15 +55,15 @@ export default class Invite extends React.Component {
               {agenda}
             </div>
           </div>
-        </div>
-        <div className="bg-info meeting-form">
+        </Paper>
+        <Paper zDepth={2} className="meeting-form">
             <div className="row">
-              <div className="col-sm-4 col-md-2">
+              <div className="col-sm-4 col-md-2" style={styles}>
                 <b>Name:</b>
               </div>
               <div className="col-sm-8 col-md-10">
-                <input
-                  type="text"
+                <TextField
+                  hintText="Full Name"
                   value={this.state.name}
                   onChange={this.onInputChange.bind(this)}
                 />
@@ -64,17 +71,14 @@ export default class Invite extends React.Component {
             </div>
             <div className="row">
               <div className="col-sm-4 col-md-2">
-                <button
-                  type="button"
-                  className="btn btn-primary"
+                <RaisedButton
+                  label="I am coming!"
                   onClick={this.onButtonClick.bind(this)}
-                >
-                  I am coming!
-                </button>
+                />
               </div>
             </div>
-        </div>
-        <div className="meeting-list">
+        </Paper>
+        <Paper zDepth={2} className="meeting-list">
           <h2>Guests</h2>
           {guests && guests.length > 0 ? (
             <ul>
@@ -87,7 +91,7 @@ export default class Invite extends React.Component {
               })}
             </ul>
           ) : null}
-        </div>
+        </Paper>
       </div>
     );
   }
