@@ -3,31 +3,38 @@ $bootstrap-sass-asset-helper: true;
 @import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 body, h1, h2, p, div {
-  font-family: 'Segoe UI', 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !important;
+  font-weight: 300 !important;
 }
 
 .well {
-  margin-top: 20px;
+  margin: 30px 0;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #F4F4F4 !important;
+}
+
+.meeting-summary,
+.meeting-form {
+  padding: 20px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  .row {
+    margin: 15px 0;
+  }
 }
 
 .meeting-summary {
-  padding: 20px;
-  .row {
-    margin-bottom: 15px;
-  }
+  background-color: #D9EDF7 !important;
 }
 
 .meeting-form {
-  padding: 20px;
-  .row {
-    margin-bottom: 15px;
-  }
+  background-color: cornsilk !important;
 }
 
 .meeting-list {
-  padding: 20px;
-  border: 1px solid #ddd;
+  padding-left: 40px;
+  border: 1px solid #ddd !important;
   li {
     font-size: 18px;
     line-height: 30px;
