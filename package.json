@@ -18,12 +18,12 @@
   "homepage": "https://github.com/kukiron/redux-firebase-app",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
-    "firebase": "^3.5.0",
+    "firebase": "^3.9.0",
     "material-ui": "^0.18.7",
-    "react": "^15.4.0-rc.4",
-    "react-dom": "^15.4.0-rc.4",
-    "react-redux": "^4.4.5",
-    "redux": "^3.6.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^4.4.8",
+    "redux": "^3.7.2",
     "redux-logger": "^2.7.0",
     "redux-thunk": "^2.1.0"
   },
