@@ -17,7 +17,7 @@
   "license": "ISC",
   "homepage": "https://github.com/kukiron/redux-firebase-app",
   "dependencies": {
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap-sass": "^3.4.0",
     "firebase": "^3.5.0",
     "material-ui": "^0.18.7",
     "react": "^15.4.0-rc.4",
