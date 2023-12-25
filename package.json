@@ -18,7 +18,7 @@
   "homepage": "https://github.com/kukiron/redux-firebase-app",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
-    "firebase": "^3.5.0",
+    "firebase": "^4.5.2",
     "material-ui": "^0.18.7",
     "react": "^15.4.0-rc.4",
     "react-dom": "^15.4.0-rc.4",
